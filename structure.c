@@ -3,26 +3,26 @@
 #include <string.h>
 
 
-struct student{
+struct Person{
+
 	char name[50];
-        char major[50];
-        int age;
-        double gpa;
+	int citNo;
+	float salary;
+}person1;
 
-}
+int main()
+{
+	/*assigning name to person1*/
+	strcpy(person1.name, "Micheal");
+	/*assigning citNo to person1*/
+	person1.citNo = 20;
+	/*assigning salary to person1*/
+	person1.salary = 12000;
+	
+	printf("Name: %s\n", person1.name);
+	printf("CitizenshipNumber: %d\n",citNo);
+	printf("Salary: %.2f\n");
 
-int main(){
 
-struct student tx;
-tx.age=22;
-/*tx.gpa=3.81;*/
-strcpy(tx.name, "Micheal");
-strcpy(tx.major, "Telecommunications");
-printf("%d", tx.age);
-printf("%s", tx.name);
-printf("%s", tx.major);
-/*printf("%f", gpa);*/
-
-
-return 0;
+	return 0;
 }
