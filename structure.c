@@ -20,8 +20,8 @@ int main()
 	person1.salary = 12000;
 	
 	printf("Name: %s\n", person1.name);
-	printf("CitizenshipNumber: %d\n",citNo);
-	printf("Salary: %.2f\n");
+	printf("CitizenshipNumber: %d\n",person1.citNo);
+	printf("Salary: %.2f\n",person1.salary);
 
 
 	return 0;
